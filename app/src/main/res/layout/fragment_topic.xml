@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".View.Fragments.TopicFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btGeneral"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingEnd="@dimen/_30sdp"
+            android:text="General"
+            android:textAlignment="textEnd"
+            android:textColor="@color/unnactive_text"
+            android:textSize="@dimen/_15ssp" />
+
+        <TextView
+            android:id="@+id/btTopic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingStart="@dimen/_30sdp"
+            android:text="Topic"
+            android:textSize="@dimen/_15ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_20sdp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/programming"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:background="@drawable/button_top"
+            android:foreground="@drawable/ripple_effect_top"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_20sdp"
+            android:text="Programming"
+            android:textAllCaps="false"
+            android:textColor="@color/brown_text"
+            android:textSize="@dimen/_13ssp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/knock"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/button_stock"
+            android:fontFamily="@font/montserrat_bold"
+            android:foreground="@drawable/ripple_effect_mid"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_20sdp"
+            android:text="knock-knock"
+            android:textAllCaps="false"
+            android:textColor="@color/brown_text"
+            android:textSize="@dimen/_13ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/general"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/button_bot"
+            android:fontFamily="@font/montserrat_bold"
+            android:foreground="@drawable/ripple_effect_bot"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_20sdp"
+            android:text="General"
+            android:textAllCaps="false"
+            android:textColor="@color/brown_text"
+            android:textSize="@dimen/_13ssp" />
+
+    </LinearLayout>
+</FrameLayout>

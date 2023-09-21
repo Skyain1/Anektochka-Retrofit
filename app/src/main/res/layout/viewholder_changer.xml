@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/btGeneral"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingEnd="@dimen/_30sdp"
+            android:text="General"
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/_15ssp" />
+
+        <TextView
+            android:id="@+id/btTopic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/unnactive_text"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingStart="@dimen/_30sdp"
+            android:text="Topic"
+            android:textSize="@dimen/_15ssp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
